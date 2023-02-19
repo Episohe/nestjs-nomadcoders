@@ -8,7 +8,6 @@ export class MoviesService {
   getAll(): Movie[] {
     return this.movies;
   }
-
   getOne(id: string): Movie {
     // ParseInt(id) 와 +id 모두 string -> number 형변환 가능하다.
     return this.movies.find((movie) => movie.id === +id);

@@ -21,7 +21,7 @@ export class MoviesController {
 
   @Get('search')
   search(@Query('year') searchingYear: string) {
-    return `We ard searching for a movie made after: ${searchingYear}`;
+    return `We are searching for a movie made after: ${searchingYear}`;
   }
 
   @Get('/:id')
